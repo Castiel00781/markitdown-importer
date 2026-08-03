@@ -1,0 +1,10 @@
+{
+  "id": "markitdown-importer",
+  "name": "MarkItDown Importer",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Import documents as Markdown notes with improved Persian and Arabic PDF text handling.",
+  "author": "Alireza Hannan",
+  "authorUrl": "https://github.com/Castiel00781",
+  "isDesktopOnly": true
+}

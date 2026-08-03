@@ -1,0 +1,16 @@
+node_modules/
+main.js
+ocr/
+*.js.map
+coverage/
+.eslintcache
+.cache/
+*.log
+*.zip
+*.tmp
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+private-fixtures/
+local-fixtures/

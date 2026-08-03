@@ -1,0 +1,41 @@
+{
+  "name": "markitdown-importer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Native desktop document importer for Obsidian with Persian and Arabic RTL handling.",
+  "type": "module",
+  "scripts": {
+    "build": "node esbuild.config.mjs production",
+    "check": "npm run lint && npm run typecheck && npm test",
+    "dev": "node esbuild.config.mjs",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "package:test": "npm run build && node scripts/package-test.mjs",
+    "package:release": "npm run build && node scripts/package-test.mjs --release"
+  },
+  "dependencies": {
+    "@tesseract.js-data/ara": "^1.0.0",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "@tesseract.js-data/fas": "^1.0.0",
+    "jszip": "^3.10.1",
+    "mammoth": "^1.9.1",
+    "pdfjs-dist": "^4.10.38",
+    "tesseract.js": "^7.0.0",
+    "tesseract.js-core": "^7.0.0",
+    "turndown": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/turndown": "^5.0.5",
+    "archiver": "^7.0.1",
+    "esbuild": "^0.28.1",
+    "eslint": "^9.17.0",
+    "globals": "^15.14.0",
+    "jsdom": "^25.0.1",
+    "obsidian": "^1.7.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.19.1",
+    "vitest": "^4.1.10"
+  }
+}

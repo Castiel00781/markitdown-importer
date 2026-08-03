@@ -1,0 +1,54 @@
+name: Bug report
+description: Report a reproducible problem with the plugin.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not attach confidential documents. Use a synthetic example whenever possible.
+  - type: input
+    id: version
+    attributes:
+      label: Plugin version
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: obsidian
+    attributes:
+      label: Obsidian version
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Source format
+      options: [PDF, DOCX, HTML or HTM, TXT, Markdown, CSV, Not format-specific]
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Include relevant settings and whether BRAT or manual installation was used.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: I removed private paths, document content, credentials, cookies, and proxy details.
+          required: true

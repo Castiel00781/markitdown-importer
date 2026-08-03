@@ -1,0 +1,24 @@
+name: Feature request
+description: Suggest an improvement or a new local conversion capability.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What workflow or limitation should be addressed?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Local-processing constraints
+      options:
+        - label: The proposal can work without uploading document content to a remote conversion service.
