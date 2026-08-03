@@ -70,6 +70,8 @@ BRAT 1.1.0 or newer can install the plugin directly from GitHub releases:
 
 BRAT downloads the release's `main.js`, `manifest.json`, and `styles.css`. The release tag, release name, package version, and manifest version use the same semantic version without a leading `v`.
 
+If BRAT reports that `manifest.json` is missing, first open the release's direct `manifest.json` asset in the same network environment as Obsidian. BRAT uses that release asset rather than only the repository-root file, and its message can also indicate that `api.github.com` or `release-assets.githubusercontent.com` is blocked by DNS, a firewall, or a proxy. Use the exact repository identifier above and BRAT 1.1.0 or newer.
+
 ## Usage
 
 Select the command or ribbon icon, browse for an external document, choose a Vault-relative output folder and filename, review RTL and conflict options, and select **Convert**. The original file is never modified.
