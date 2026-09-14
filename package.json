@@ -18,7 +18,7 @@
     "@tesseract.js-data/ara": "^1.0.0",
     "@tesseract.js-data/eng": "^1.0.0",
     "@tesseract.js-data/fas": "^1.0.0",
-    "jszip": "^3.10.1",
+    "jszip": "^3.10.2",
     "mammoth": "^1.9.1",
     "pdfjs-dist": "^4.10.38",
     "tesseract.js": "^7.0.0",
